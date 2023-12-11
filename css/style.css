@@ -34,13 +34,17 @@ header {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 2.5rem;
+    margin-left: 4rem;
 }
 
 
 /* styling af menupunkterne, så de er på linje med hinanden*/
 .navbar ul{
     display: flex;
+}
+
+#check{
+    display: none;
 }
 
 /* resigering af burger menu */
@@ -59,6 +63,10 @@ header {
     .header{
         padding: 1rem 3%;
     }
+
+    .navbar a{
+        margin-left: 2rem;
+    }
 }
 
 @media (max-width: 768px){
@@ -67,14 +75,34 @@ header {
         display: inline-flex;
     }
 
+    /* gør burger menuen forsvinder når man trykker på den, så krydset kan dukke frem */
+    #check:checked~.burger #burger-menu{
+        display: none;
+    }
+
+    .burger #kryds-menu{
+      display: none;  
+    }
+
+    /* gør krydset dukker frem */
+    #check:checked~.burger #kryds-menu{
+        display: block;
+    }
+
     /* styling af "baggrunden" inde i burgermenuen */
     .navbar{
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        height: 17.7rem;
+        height: 0;
         background-color: red;
+        overflow: hidden;
+        transition: 0.3s ease;
+    }
+
+    #check:checked~.navbar{
+        height: 17.7rem;
     }
 
     /* styling af punkterne */
