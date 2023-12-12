@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Øl</title>
+
+    <!-- links hvor den henter sociale medier logo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- eget stylesheet skal altid være det nederste stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <!-- indsættelse af logo, så det er et link der altid vil føre tilbage yil forsiden -->
+        <a class="logo" href="index.html"><img class="logo" src="img/logo.webp" alt="logo"></a>
+        
+        <!-- bliver brugt til at lave burger menu til kryds -->
+        <input type="checkbox" id="check">
+        <!-- iconerne som bliver brugt, når burger menuen skal dukke op -->
+        <label for="check" class="burger">
+            <i class="fa fa-bars" id="burger-menu"></i>
+            <i class="fa fa-close" id="kryds-menu"></i>
+        </label>
+        
+        <nav class="navbar">
+            <!-- der er her lavet en unordered list -->
+                <ul>
+                    <li><a href="produkter.html">Produkter</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="#">Om os</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
