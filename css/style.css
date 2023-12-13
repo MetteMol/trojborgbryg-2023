@@ -138,7 +138,7 @@ header {
 
 /* første 3 punkter får footer til at være i bunden af siden */
 footer{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
     /* næste to er udseende på footer */
@@ -231,6 +231,9 @@ footer{
 }
 
 @media (max-width: 768px){
+    footer{
+        height: 40rem;
+    }
     .footer-col{
         width: 100%;
         padding-bottom: 2rem;
@@ -239,5 +242,53 @@ footer{
 
 
 
+/* ****************************************************************************************************************
+            Styling af siden med produkter starter
+***************************************************************************************************************** */
 
+.produkter-h1{
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
 
+.beer{
+    height: 35rem;
+    width: auto;
+    padding: 2rem;
+}
+
+.kasse{
+    padding: 2rem 3rem 5rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* kassen som kommer frem uden om billederne, og de bliver forstørret */
+.kasse a img:hover{
+    transform: scale(1.1);
+    background-color: #097834;
+}
+
+/* ****************************************************************************************************************
+            Styling af siden om sommer øl starter
+***************************************************************************************************************** */
+
+/* styling af h1 */
+.om-ol{
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.ol-indhold{
+    padding: 3rem 3rem 5rem 3rem;
+}
+
+.sommer{
+    height: 40rem;
+    width: auto;
+}
