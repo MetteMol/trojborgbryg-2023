@@ -26,11 +26,11 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 2;
-    height: 12rem;
+    height: 10rem;
 }
 
 .logo {
-    width: 10rem;
+    width: 8rem;
     height: auto;
 }
 
@@ -241,6 +241,18 @@ footer{
 }
 
 
+/* ****************************************************************************************************************
+            Styling af forsiden starter
+***************************************************************************************************************** */
+
+.forside{
+    width: 100%;
+    padding-top: 10rem;
+}
+
+
+
+
 
 /* ****************************************************************************************************************
             Styling af siden med produkter starter
@@ -254,7 +266,7 @@ footer{
 }
 
 .beer{
-    height: 35rem;
+    height: 32rem;
     width: auto;
     padding: 2rem;
 }
