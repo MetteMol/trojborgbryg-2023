@@ -250,6 +250,36 @@ footer{
     padding-top: 10rem;
 }
 
+.midt-forside{
+    height: 40rem;
+    width: 100%;
+    background-color: #0daf4c;
+}
+
+.hvid-kasse{
+    height: 30rem;
+    width: 60%;
+    background-color: white;
+}
+
+.slut-forside{
+    height: 35rem;
+    width: 100%;
+    padding: 2rem 3rem 5rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.olsmagning-img{
+    height: 25rem;
+    width: auto;
+}
+
+.brygger-img{
+    height: 25rem;
+    width: auto;  
+}
 
 
 
@@ -271,6 +301,8 @@ footer{
     padding: 2rem;
 }
 
+/* styling af billedernes position på siden */
+/* måden det er sat op gør de er resposive og dermed hoppe ind under hinanden når skærmen bliver mindre */
 .kasse{
     padding: 2rem 3rem 5rem 3rem;
     display: flex;
