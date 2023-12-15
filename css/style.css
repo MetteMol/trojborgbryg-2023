@@ -250,37 +250,216 @@ footer{
     padding-top: 10rem;
 }
 
+/* gør man ikke kan se billedene, når særmen er en computer */
+.tablet-img{
+    display: none;
+}
+.mobil-img{
+    display: none;
+}
+
 .midt-forside{
-    height: 40rem;
+    height: 39rem;
     width: 100%;
     background-color: #0daf4c;
+    /* punkterne herunder gør den hvide kasse er i midten af den grønne */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+/* stuling af den hvide kasse, og dens indhold */
 .hvid-kasse{
-    height: 30rem;
-    width: 60%;
+    height: 36rem;
+    width: 60rem;
     background-color: white;
+    display: flex;
+    padding: 3rem;
 }
 
+/* billede inde i den hvide kasse */
+.infog-img{
+    height: 30rem;
+    width: auto;
+}
+
+.text-forside{
+    padding-left: 3rem;
+
+}
+
+/* overskift i den hvide kasse */
+.os-forside{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+/* brødtekst i den hvide kasse */
+.p-os-forside{
+    padding-right: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+/* overskift til de to billeder nederst på siden */
+.genvej-h2{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+/* styling af de to billeder nederst på siden */
 .slut-forside{
-    height: 35rem;
+    height: 30rem;
     width: 100%;
-    padding: 2rem 3rem 5rem 3rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
 
 .olsmagning-img{
     height: 25rem;
     width: auto;
+    border-radius: 0.5rem;
 }
 
 .brygger-img{
     height: 25rem;
-    width: auto;  
+    width: auto; 
+    border-radius: 0.5rem; 
 }
 
+/* styling af "kortet", som dukker op oven på billedet */
+.kort{
+    height: 25rem;
+    width: 20.9rem;
+    /* har først sat overflow ind efter kortet er stylet, da det gør man ikke kan se "kortet" når det ikke ligger over billedet */
+    overflow: hidden;
+    /* gør at "kortet" dukker op det rigte sted" */
+    position: relative;
+}
+/* styling af det som skal dukke op hen over billedet */
+.kort-body{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    /* har først sat den til -100% efter jeg har stylet hele kortet, for at det kan komme ind for højre side */
+    right: -100%;
+    position: absolute;
+    /* background-color: #09783468; */
+    background-color: #0daf4b6c;
+    backdrop-filter: blur(1rem);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    transition: 0.5s;
+}
+
+/* gør at kortet dukker op, når musen er på billedet */
+.kort:hover .kort-body{
+    right: 0;
+
+}
+
+.h3-korttitel{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.p-korttekst{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kort-knap{
+    background-color: #097834;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 992px){
+    .forside{
+        display: none;
+    }
+
+    .tablet-img{
+        display: block;
+        width: 100%;
+        padding-top: 10rem;
+    }
+
+    /* her har jeg blot ændret på størrelsen til den hvide kasse, for at teksen ikke ender med at gå udover */
+    .hvid-kasse{
+        height: 36rem;
+        width: 90%;
+        background-color: white;
+        display: flex;
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    .tablet-img{
+        display: none;
+    }
+
+    .mobil-img{
+        display: block;
+        width: 100%;
+        padding-top: 10rem;
+    }
+
+    .slut-forside{
+        height: 60rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* styling af tekst og billede midt på siden, så det bliver lavet om til at stå over under hinanden */
+    .midt-forside{
+        height: auto;
+        width: 100%;
+    }
+
+    .hvid-kasse{
+        height: auto;
+        width: 80%;
+        background-color: white;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1rem;
+        margin: 2rem 0;
+    }
+
+    .infog-img{
+        height: auto;
+        width: 90%;
+    }
+    .text-forside{
+        padding-left: 0;
+        /* height: 30rem */
+    }
+
+    /* brødtekst i den hvide kasse */
+    .p-os-forside{
+        padding: 0 0 2rem 0;
+
+    }
+}
 
 
 
