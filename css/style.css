@@ -479,7 +479,7 @@ footer{
     width: auto;
     /* jeg har tilføjet padding som er tykkelsen på den grønne ramme, hvor margin tilføjer mere afstand mellem billederne */
     padding: 1rem;
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
 /* styling af billedernes position på siden */
@@ -496,6 +496,22 @@ footer{
     transform: scale(1.1);
     background-color: #097834;
 }
+
+@media (max-width: 992px){
+    .beer{
+        height: 27rem;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .beer{
+        height: 28rem;
+        width: auto;
+    }
+}
+
+
 
 /* ****************************************************************************************************************
             Styling af siden om sommer øl starter
@@ -572,6 +588,7 @@ footer{
             Styling af events siden starter
 ***************************************************************************************************************** */
 
+/* jeg havde her prøvet lidt forskelligt, derfor der er nogle ting som er kommenteret ud */
 .h1-events{
     padding-top: 12rem;
     display: flex;
@@ -579,24 +596,35 @@ footer{
     font-size: 3rem;
 }
 
-/* styling af punktet ølsmagning starter */
-.ol-smagning{
-    margin: 2rem 5rem;
+/* 2 div rundt om hele punktet for ølsmagning og brygger. er med til det er muligt at teksten flytter sig under billedet, efter skærmens størrelse  */
+.body{
     display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+/* styling af punktet ølsmagning starter */
+/* div om det hele */
+.ol-smagning{
+    margin: 2rem auto;
+    width: 80%;
+}
+
+/* billede */
 .ol-smagning-img{
     height: 30rem;
     width: auto;
-}
-
-.ol-smagning-h2{
+    float: left;
+    margin-right: 3rem;
     margin-bottom: 1rem;
 }
 
-.ol-smagning-kasse{
-    padding-left: 3rem;
+.ol-smagning-h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
+
 
 /* styling af alt tekst som er i p på event siden */
 .events-p{
@@ -605,18 +633,24 @@ footer{
 }
 
 /* styling af punktet bliv brygger for en dag starter */
-.brygger{
-    margin: 5rem 5rem;
-    display: flex;
-}
 
+/* div om det hele */
+.brygger{
+    margin: 2rem auto;
+    width: 80%;
+}
+/* billede */
 .event-brygger-img{
     height: 30rem;
     width: auto;
+    float: right;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
 }
 
-.brygger-kasse{
-    padding-right: 3rem;
+.brygger-h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* stylink af telefon, mail og adresse link på event siden. findes inde i p teksten */
@@ -629,4 +663,57 @@ footer{
     color: #0daf4c;
     text-decoration: none;
     opacity: 0.9;
+}
+
+/* styling til tablet */
+@media (max-width: 992px){
+    /* styling af ølsmagning starter */
+    /* her har jeg blot gjort at billedet bliver lidt mindre */
+    .ol-smagning-img{
+        height: 25rem;
+        width: auto;
+    }
+
+    .event-brygger-img{
+        height: 25rem;
+        width: auto;
+    }
+}
+
+/* styling til mobil starter */
+@media (max-width: 768px){
+    /* styling af ølsmagning delen */
+    .ol-smagning{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .ol-smagning-img{
+        height: auto;
+        width: 20rem;
+        margin: 0;
+    }
+
+    .ol-smagning-kasse{
+        margin-bottom: 2rem;
+    }
+
+    /* stylling af brygger delen */
+    .brygger{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .event-brygger-img{
+        height: auto;
+        width: 20rem;
+        margin: 0;
+    }
+
+    .brygger-kasse{
+        margin-bottom: 2rem;
+    }
 }
