@@ -40,6 +40,7 @@ header {
     text-decoration: none;
     font-weight: 500;
     margin-left: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -171,6 +172,7 @@ footer{
 /* styling af overskrifterne */
 .footer-col h3{
     font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     /* indsæt font family */
     margin-bottom: 1rem;
@@ -291,13 +293,13 @@ footer{
 
 .text-forside{
     padding-left: 2rem;
-
 }
 
 /* overskift i den hvide kasse */
 .os-forside{
     font-size: 2.5rem;
     padding-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /* brødtekst i den hvide kasse */
 .p-os-forside{
@@ -312,6 +314,7 @@ footer{
     display: flex;
     justify-content: center;
     font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* styling af de to billeder nederst på siden */
@@ -370,7 +373,8 @@ footer{
 
 .h3-korttitel{
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding-bottom: 2rem;
     display: flex;
     justify-content: center;
@@ -476,6 +480,7 @@ footer{
     display: flex;
     justify-content: center;
     font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .beer{
@@ -527,6 +532,7 @@ footer{
     display: flex;
     justify-content: center;
     font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .ol-indhold{
@@ -599,6 +605,7 @@ footer{
     display: flex;
     justify-content: center;
     font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* 2 div rundt om hele punktet for ølsmagning og brygger. er med til det er muligt at teksten flytter sig under billedet, efter skærmens størrelse  */
@@ -628,6 +635,7 @@ footer{
 .ol-smagning-h2{
     font-size: 2rem;
     margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -657,6 +665,7 @@ footer{
 .brygger-h2{
     font-size: 2rem;
     margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* stylink af telefon, mail og adresse link på event siden. findes inde i p teksten */
